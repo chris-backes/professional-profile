@@ -20,6 +20,7 @@ header {
   padding: 100px 30px 20px 30px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 5px solid var(--border-color)
 }
 
 header nav ul li {
@@ -40,6 +41,9 @@ section {
 section div {
   padding: 20px;
 }
+p {
+    font-size: 25px;
+}
 footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -57,14 +61,20 @@ footer a:hover {
 }
 .footer-content {
   display: flex;
+  font-size: 21px;
 }
 .section-title {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   width: 15%;
+  border-right: 5px solid var(--border-color);
 }
 .section-content {
   width: 85%;
+}
+.section-content img:hover {
+    border: 2px solid var(--secondary-color);
+}
 }
 .about-me-content {
   background-color: var(--secondary-color);
