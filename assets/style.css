@@ -88,6 +88,10 @@ footer a:hover {
 .section-content {
   width: 85%;
 }
+.section-content img {
+  width: 400px;
+  height: 400px;
+}
 .section-content img:hover {
   border: 2px solid var(--secondary-color);
 }
