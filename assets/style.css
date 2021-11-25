@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #0d698b;
+  --primary-color: #1b2d7e;
   --secondary-color: #f2f1e8;
-  --tertiary-color: #e34234;
+  --tertiary-color: #6e7dd4;
   --border-color: #050533;
 }
 
@@ -23,6 +23,9 @@ header {
   border-bottom: 5px solid var(--border-color);
 }
 
+header nav {
+  padding: 35px 0 0 0;
+}
 header nav ul li {
   display: inline;
 }
@@ -35,11 +38,14 @@ header a {
 header a:hover {
   font-weight: bold;
 }
+h1 {
+  font-size: 50px;
+}
 section {
   display: flex;
 }
 section div {
-  padding: 20px;
+  padding: 30px;
 }
 p {
   font-size: 25px;
@@ -50,7 +56,6 @@ footer {
   display: flex;
 }
 footer div {
-  padding: 20px;
 }
 footer a {
   text-decoration: none;
@@ -58,6 +63,7 @@ footer a {
 }
 footer a:hover {
   font-weight: bold;
+  opacity: 0.5;
 }
 .hero {
   background-image: url(./images/code-image.png);
@@ -68,7 +74,6 @@ footer a:hover {
   flex-wrap: wrap;
   align-items: flex-end;
   background-attachment: fixed;
-  background-position: 80%;
   width: 100%;
   height: 200px;
 }
@@ -78,7 +83,8 @@ footer a:hover {
 }
 .footer-content {
   display: flex;
-  font-size: 21px;
+  font-size: 19px;
+  justify-content: space-evenly;
 }
 .section-title {
   background-color: var(--tertiary-color);
@@ -86,15 +92,19 @@ footer a:hover {
   width: 15%;
 }
 .section-title-inner-box {
-  border-right: 5px solid var(--border-color);
+  border-right: 7px solid var(--border-color);
   border-radius: 5px;
   margin: 0 10px 0 0;
   height: 80%;
 }
+
 .section-content {
   width: 85%;
   display: flex;
   justify-content: space-evenly;
+}
+.section-content p {
+  text-align: justify;
 }
 .section-content img {
   width: 350px;
@@ -107,4 +117,8 @@ footer a:hover {
 .about-me-content {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.contact-content {
+  padding: 50px 0 40px 0;
 }
