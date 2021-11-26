@@ -16,9 +16,9 @@ body {
   color: var(--secondary-color);
   font-family: "Courier New", Courier, monospace;
 }
-
+/*Start of Header formatting*/
 header {
-  padding: 50px 30px 20px 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -51,32 +51,7 @@ header a {
 header a:hover {
   font-weight: bold;
 }
-
-section {
-  display: flex;
-}
-section div {
-  padding: 30px;
-}
-p {
-  font-size: 25px;
-}
-footer {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  display: flex;
-}
-footer div {
-  padding: 30px;
-}
-footer a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-footer a:hover {
-  font-weight: bold;
-  opacity: 0.5;
-}
+/*Start of Hero formatting*/
 .hero {
   background-image: url(./images/code-image.png);
   background-size: cover;
@@ -92,52 +67,62 @@ footer a:hover {
   border-top: 5px solid var(--border-color);
 }
 .hero h2 {
-  padding: 5px 50px;
-  font-size: 35px;
+  padding: 0 5px;
+  font-size: 30px;
+  background-color: initial;
 }
-.footer-content {
+/* Start of formatting for main content--About Me and My Work*/
+
+section {
   display: flex;
-  font-size: 17px;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0 0 40px;
 }
-.section-title {
+section h2 {
+  font-size: 50px;
+  text-align: right;
+  padding-left: 15px;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
-  width: 15%;
 }
-.section-title-inner-box {
-  border-right: 7px solid var(--border-color);
-  border-radius: 5px;
-  height: 80%;
+section div {
+  padding: 30px;
 }
 
-.section-content {
-  width: 85%;
+/*Start formatting for just the about me section*/
+.about {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
-.section-content p {
-  text-align: justify;
-}
-.section-content img {
-  width: 200px;
-  height: 200px;
-  border: 3px solid var(--border-color);
-  filter: grayscale(50%);
-  opacity: 0.75;
-}
-.section-content img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transition: 1s;
-}
-
-.about-me-content {
+.about article {
+  display: flex;
+  position: relative;
+  padding: 40px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-
-.contact-content {
-  padding: 50px 0 40px 0;
+.about article p {
+  font-size: 25px;
+  line-height: 1.25;
+  text-align: justify;
+}
+/* start of formmatting for footer/contact info */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+}
+footer h2 {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+footer div {
+  padding: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+footer a:hover {
+  font-weight: bold;
+  opacity: 0.5;
 }
