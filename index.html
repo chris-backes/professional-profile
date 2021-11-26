@@ -7,13 +7,13 @@
         content="width=device-width, initial-scale=1.0"
       />
       <title>Christopher Backes—Portfolio</title>
-      <link rel="stylesheet" href="assets/style.css" />
+      <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
         <header>
             <div class="introduction">
                 <img src="assets/images/headshot.jpg" alt="photograph of author">
-                <h1>  Christopher Backes</h1>
+                <h1>Christopher Backes</h1>
             </div>
             <div>
             <nav>
@@ -34,76 +34,108 @@
             </nav>
             </div>
         </header>
+        <!--Hero Banner (image in the CSS styling)-->
         <section class="hero">
             <h2>A Small Intro...</h2>
         </section>
-        <section id="about-me">
-            <div class="section-title">
-                <div class="section-title-inner-box">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="section-content about-me-content">
+
+
+
+        <!--Starts the About Me Section-->
+        <section id="about-me" class="about">
+            <h2>About Me</h2>
+            <article class="about-content">
                 <p>
                     I have been to a lot of places and done a lot of things. I grew up in the suburbs of St. Louis. 
-                    I started going to college in New Orleans, but left briefly to enter a Catholic seminary. I 
-                    decided against that, and again went back to college to finish up the remaining two years of 
-                    college. I then moved to Washington D.C. to work on a PhD in Philosophy, specialising in Arabic 
-                    and Latin Medieval philosophy. Three years into that, I trainsitioned into the staffing world 
-                    through the help of a fiend. It was in this context that I first learned about an Excel Macro, 
-                    and from there, I started teaching myself VBA. There's a lot to love about coding, but algos are a primary interest of mine, and as 
+                    I started going to college in New Orleans. I then moved to Washington D.C. to work on a PhD in 
+                    Philosophy, specialising in Arabic and Latin Medieval philosophy. Three years into that, I 
+                    trainsitioned into the staffing world through the help of a friend. It was in this context that 
+                    I first learned about an Excel Macro.
+                </p>
+                <p>
+                    Quickly thereafter, I started teaching myself VBA, and now I am in a bootcamp to transition in 
+                    to coding. There's a lot to love about coding, but algos are a primary interest of mine, and as 
                     quickly as I learned JavaScript, I tried my hand a making a FizzBuzz program.
                 </p>
-            </div>
+            </article>
         </section>
-        <section id="my-work">
-            <div class="section-title">
-                <div class="section-title-inner-box">
-                    <h2>My Work</h2>
-                </div>
-            </div>
-            <div class="section-content">
-                <a href="https://chris-backes.github.io/FizzBuzz/">
-                    <img src="assets/images/js-fizz.JPG">
+        
+        
+        
+        <!--Starts the My Work Section-->
+        <section id="my-work" class="work">
+            <h2>My Work</h2>
+            <article class="work-container">
+                <a href="https://chris-backes.github.io/FizzBuzz/" class="first-container">
+                    <img src="assets/images/js-fizz.JPG" alt="javascript code for fizzbuzz">
+                    <div class="work-text">
+                        <p>
+                            FizzBuzz: <br>
+                            JavaScript
+                        </p>
+                    </div>
                 </a>
-                <a href="https://chris-backes.github.io/urban-octo-telegram/">
-                    <img src="./assets/images/seo-site.JPG">
+                <a href="https://chris-backes.github.io/urban-octo-telegram/" class="not-first-container">
+                    <img src="./assets/images/seo-site.JPG" alt="">
+                    <div class="work-text">
+                        <p>
+                            Horiseon: <br>
+                            HTML/CSS
+                        </p>
+                    </div>
                 </a>
-                <a href="https://chris-backes.github.io/run-buddy/">
+                <a href="https://chris-backes.github.io/run-buddy/" class="not-first-container">
                     <img src="./assets/images/run-buddy.JPG">
+                    <div class="work-text">
+                        <p>
+                            Run Buddy<br>
+                            HTML/CSS
+                        </p>
+                    </div>
                 </a>
-                <a href="https://github.com/chris-backes/financial-tools-for-sales">
+                <a href="https://github.com/chris-backes/financial-tools-for-sales" class="not-first-container">
                     <img src="assets/images/finance.JPG">
+                    <div class="work-text">
+                        <p>
+                            Analysis Subs (Excel)<br>
+                            VBA
+                        </p>
+                    </div>
                 </a>
-                <a href="https://github.com/chris-backes/date-input">
+                <a href="https://github.com/chris-backes/date-input" class="not-first-container">
                     <img src="assets/images/date.JPG">
+                    <div class="work-text">
+                        <p>
+                            Date Entry Sub<br>
+                            VBA
+                        </p>
+                    </div>
                 </a>
-            </div>
+            </article>
         </section>
+
+
+        <!--Footer Section, contains contact info-->
         <footer id="contact-me">
-            <div class="section-title">
-                <div class="section-title-inner-box">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-            <div class="section-content footer-content">
-                <div class="contact-content">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>
                     Phone: </br>
                     (555)-555-5555
-                </div>
-                <div class="contact-content">
+                </li>
+                <li>
                     Email: </br>
                     <a href="mailto:christopher.backes@gmail.com">christopher.backes@gmail.com</a>
-                </div>
-                <div class="contact-content">
+                </li>
+                <li>
                     GitHub: </br>
                     <a href="https://github.com/chris-backes">github.com/chris-backes</a>
-                </div>
-                <div class="contact-content">
+                </li>
+                <li>
                     LinkedIn: </br>
                     <a href="https://www.linkedin.com/in/christopher-backes-2b7513169/">www.linkedin.com/in/christopher-backes-2b7513169/</a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
