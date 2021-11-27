@@ -30,7 +30,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 https://chris-backes.github.io/professional-profile/
 
-![website screenshot] (./assets/images/website.png)
+![website screenshot](./assets/images/website.png)
 
 ## Content
 
