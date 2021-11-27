@@ -1,3 +1,4 @@
+/*root declaration for variables and universal declaration for all content in the webpage*/
 :root {
   --primary-color: #1b2d7e;
   --secondary-color: #f2f1e8;
@@ -23,6 +24,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+/*formatting image and h1 elemetn in header*/
 .introduction {
   display: flex;
 }
@@ -37,7 +39,8 @@ header img {
   height: 60px;
   width: 60px;
 }
-
+/*nav bar set to read horizontal rather than vertical, and hyperlinks have formatting altered
+pseudo-class reacts to hovering over linked elements*/
 header nav {
   padding: 35px 0 0 0;
 }
@@ -53,7 +56,7 @@ header a {
 header a:hover {
   font-weight: bold;
 }
-/*Start of Hero formatting*/
+/*Start of Hero formatting--Much taken from RUn Buddy site*/
 .hero {
   background-image: url(./images/code-image.png);
   background-size: cover;
@@ -73,9 +76,9 @@ header a:hover {
   font-size: 30px;
   background-color: initial;
 }
-/* Start of formatting for main content--About Me and My Work*/
-
-section {
+/* Start of formatting for main content--About Me, My Work, and Contact Me (footer)*/
+section,
+footer {
   display: flex;
   justify-content: space-between;
 }
@@ -88,12 +91,7 @@ footer h2 {
   color: var(--secondary-color);
   width: 20%;
 }
-section div {
-  padding: 30px;
-}
-
 /*Start formatting for just the about me section*/
-
 .about article {
   display: flex;
   position: relative;
@@ -130,6 +128,7 @@ section div {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+/*Designates the image to be opage unless user is hovering over the elemnet*/
 .work article a img {
   opacity: 0.5;
 }
@@ -137,6 +136,7 @@ section div {
   opacity: 1;
   transition: 1s;
 }
+/*Positions and formats the text box that overlays the image*/
 .work article a div {
   position: relative;
   right: 290px;
@@ -144,12 +144,14 @@ section div {
   margin: 0;
   padding: 0;
 }
+/*Formats the first image box and the text box overlaying it. The declaration beneath positions it to account for the extra width.*/
 .first {
   width: 590px !important;
 }
 .first div {
   right: 580px !important;
 }
+
 .work article div p {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -157,14 +159,7 @@ section div {
   height: 40px;
   border: 2px solid var(--border-color);
 }
-
 /* start of formmatting for footer/contact info */
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 footer div {
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +181,8 @@ footer a {
 footer a:hover {
   font-weight: bold;
 }
+
+/*CSS declarionations for smaller laptops*/
 @media screen and (max-width: 1104px) {
   header div {
     width: 100%;
@@ -195,6 +192,7 @@ footer a:hover {
     justify-content: center;
   }
 }
+/*CSS declarations for tablets. Slightly larger width than usual because of issues with the h2 element for "Contact Me"*/
 @media screen and (max-width: 940px) {
   section,
   footer {
@@ -217,6 +215,7 @@ footer a:hover {
     border-top: 5px solid var(--border-color);
   }
 }
+/*CSS declarations for phones*/
 @media screen and (max-width: 696px) {
   .work article {
     justify-content: center;
